@@ -15,7 +15,7 @@ export class UserProfileImagesComponent implements OnInit {
   @Input() authUserId: string;
 
   /** Массив изображений пользователя */
-  private images: Image[];
+  public images: Image[];
 
   constructor(private userService: UserService) {
   }

@@ -11,7 +11,7 @@ import { AuthGlobalService } from 'src/app/services/auth-global.service';
 })
 export class UserProfileComponent implements OnInit {
   /** Пользователь, данные которого просматриваются */
-  private user: User;
+  public user: User;
 
   /** Текущая вкладка */
   public activeTab = 'selfies';

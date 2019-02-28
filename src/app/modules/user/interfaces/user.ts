@@ -5,6 +5,7 @@ export interface User {
   nickname?: string;
   first_name?: string;
   last_name?: string;
+  full_name?: string;
   phone?: string;
   gender_orientation?: string;
   city?: string;
@@ -36,7 +37,7 @@ export interface User {
   my_images?: Array<string>;
   paypal_id?: string;
   points?: number;
-  rank?: object;
+  rank?: any;
   register_date?: string;
   type?: string;
 }

@@ -9,10 +9,10 @@ import { Challenge } from '../../interfaces/challenge';
 })
 export class ChallengesPageComponent implements OnInit {
   /** Текущая вкладка */
-  private activeTab: string;
+  public activeTab: string;
 
   /** Соревнования */
-  private challenges: Array<Challenge>;
+  public challenges: Array<Challenge>;
 
   constructor(private challengesService: ChallengesService) { }
 
@@ -26,7 +26,7 @@ export class ChallengesPageComponent implements OnInit {
    * @param isClosed - признак того, что соревнование закрыто
    * @param activeTab - название текущей вкладки
    */
-  private getChallenges(isActive: number, isClosed: number, activeTab: string) {
+  public getChallenges(isActive: number, isClosed: number, activeTab: string) {
     this.activeTab = activeTab;
 
     this.challengesService.getChallenges(isActive, isClosed).subscribe((data: Challenge[]) => {
